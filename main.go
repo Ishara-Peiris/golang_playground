@@ -18,5 +18,19 @@ func main(){
 
 	userEmail:="ishrapeiris2001@gmail.com"
 	fmt.Print(userEmail)
+var firstName string
+var lastName string
+var emailAddress string
+var age int
+fmt.Print("enter your first name ")
+	fmt.Scan(&firstName)
+ fmt.Print("enter your lastname")
+ fmt.Scan(&lastName)
+ fmt.Print("enter your email addres")
+ fmt.Scan(&emailAddress)
+ fmt.Print("enter your age")
+ fmt.Scan(&age)
+
+ fmt.Printf("hi, %v %v your %v received and your age is %v",firstName,lastName,emailAddress,age)
 
 }
