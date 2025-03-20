@@ -9,6 +9,8 @@ func main(){
 	var availableTicket int = 45
 
 	fmt.Println("Hi,welcome to",EventName )
+
+
 	fmt.Println("you have total number of tickets",TotalTicket,"still available",availableTicket)
 	fmt.Printf("hii,welcome to %v\n",EventName)
 
@@ -23,6 +25,7 @@ var emailAddress string
 var userTicket int
 fmt.Print("enter your first name ")
 	fmt.Scan(&firstName)
+
  
  
  fmt.Scan(&emailAddress)
@@ -41,5 +44,10 @@ availableTicket=availableTicket-userTicket
  userslice=append(userslice, userEmail)
  fmt.Print(userslice)
  fmt.Print(len(userArray))
+
+ for{
+	fmt.Println("Hi,welcome to" )
+
+ }
 
 }
