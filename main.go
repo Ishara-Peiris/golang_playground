@@ -6,7 +6,7 @@ import "fmt"
 func main(){
 	var EventName = "Earth conference"
 	const TotalTicket = 100
-	var availableTicket int = -45
+	var availableTicket int = 45
 
 	fmt.Println("Hi,welcome to",EventName )
 	fmt.Println("you have total number of tickets",TotalTicket,"still available",availableTicket)
@@ -19,18 +19,27 @@ func main(){
 	userEmail:="ishrapeiris2001@gmail.com"
 	fmt.Print(userEmail)
 var firstName string
-var lastName string
 var emailAddress string
-var age int
+var userTicket int
 fmt.Print("enter your first name ")
 	fmt.Scan(&firstName)
- fmt.Print("enter your lastname")
- fmt.Scan(&lastName)
- fmt.Print("enter your email addres")
+ 
+ 
  fmt.Scan(&emailAddress)
- fmt.Print("enter your age")
- fmt.Scan(&age)
+ fmt.Print("enter how many tickets you order")
+ fmt.Scan(&userTicket)
+availableTicket=availableTicket-userTicket
 
- fmt.Printf("hi, %v %v your %v received and your age is %v",firstName,lastName,emailAddress,age)
+ fmt.Printf("hi, %v  your %v received and your email:",firstName,emailAddress)
+ fmt.Print("available ticket amout is",availableTicket)
+
+ var userArray[50]string
+ userArray[1]=firstName
+ fmt.Print(userArray[1])
+
+ var userslice[]string
+ userslice=append(userslice, userEmail)
+ fmt.Print(userslice)
+ fmt.Print(len(userArray))
 
 }
