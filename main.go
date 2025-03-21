@@ -55,6 +55,14 @@ taskThree := "reading"
  }
 
 
-
+ printTask(todoArray)
 
 }
+func printTask(taskArray[]string){
+	for index,taskItem := range(taskArray){
+		fmt.Printf("%v. %v",index+1,taskItem)
+	}
+ }
+
+
+
