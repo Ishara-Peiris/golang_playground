@@ -60,7 +60,8 @@ fmt.Println()
  	printTask(todoArray)
 	println()
 	todoArray = addTask(todoArray,"goooooooooo")
-	fmt.Printf("%v",todoArray)
+	println()
+	printTask(todoArray)
 }
 func printTask(taskArray[]string){
 	for index,taskItem := range(taskArray){
@@ -71,9 +72,7 @@ func printTask(taskArray[]string){
 
  func addTask(taskArray[] string,newTask string ) [] string{
 	 var updatedTask = append(taskArray,newTask)
-	 for index,newitem:=range(taskArray){
-		fmt.Printf("%v. %v",index+1,newitem)
-	 }
+	 printTask(taskArray)
 	 return updatedTask
 
 }
