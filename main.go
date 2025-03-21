@@ -53,16 +53,30 @@ taskThree := "reading"
  for _,todoItem := range(todoArray){
 	fmt.Printf("%v\n",todoItem)
  }
-
-
- printTask(todoArray)
-
+fmt.Println()
+ 	printTask(todoArray)
+	println()
+	println()
+ 	printTask(todoArray)
+	println()
+	todoArray = addTask(todoArray,"goooooooooo")
+	fmt.Printf("%v",todoArray)
 }
 func printTask(taskArray[]string){
 	for index,taskItem := range(taskArray){
 		fmt.Printf("%v. %v",index+1,taskItem)
+		println()
 	}
  }
+
+ func addTask(taskArray[] string,newTask string ) [] string{
+	 var updatedTask = append(taskArray,newTask)
+	 for index,newitem:=range(taskArray){
+		fmt.Printf("%v. %v",index+1,newitem)
+	 }
+	 return updatedTask
+
+}
 
 
 
