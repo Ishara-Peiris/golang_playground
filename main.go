@@ -45,10 +45,16 @@ availableTicket=availableTicket-userTicket
  fmt.Print(userslice)
  fmt.Print(len(userArray))
 
- for{
-	fmt.Println("Hi,welcome to" )
+var taskOne = "getup"
+taskTwo := "meditate"
+taskThree := "reading"
+ var todoArray = []string{taskOne,taskTwo,taskThree}
 
+ for _,todoItem := range(todoArray){
+	fmt.Printf("%v\n",todoItem)
  }
+
+
 
 
 }
